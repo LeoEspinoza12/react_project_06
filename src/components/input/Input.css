@@ -1,0 +1,51 @@
+.Left-Side {
+  background: rgb(210, 210, 210, 0.6)
+}
+
+/* Add New Button */
+.Left-Side .Button {
+  width: 100%;
+  margin-top: 20%;
+  font-size: 1em
+}
+
+.Left-Side .Button button {
+  height: 70%;
+  width: 50%;
+  margin: 3% 23%;
+}
+
+
+
+/* New Input Area */
+.Left-Side .Form {
+  height: 45%;
+  margin-top: 20%;
+}
+
+.Left-Side .Form label,
+.Right-Side form label {
+  margin: 0;
+  font-size: 0.9em;
+  font-weight: 700
+}
+
+.Left-Side .Form input,
+.Left-Side .Form textarea,
+.Right-Side form input,
+.Right-Side form textarea {
+  font-size: 0.8em;
+  background: rgb(250, 250, 250);
+  font-weight: 600
+}
+
+.Left-Side .Form button,
+.Right-Side form button {
+  font-size: 0.9em;
+  width: 50%
+}
+
+.Left-Side .Form button:disabled{
+  background: rgb(106,136,186);
+  color: rgb(60,67,79)
+}

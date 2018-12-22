@@ -1,0 +1,59 @@
+
+
+.container {
+  width: 80%;
+  height: 80vh;
+  margin-top: 10vh;
+}
+
+.row{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+/* Edit Form */
+.Right-Side .FormUpdate{
+  width: 75%;
+  margin: 12% auto;
+}
+
+
+/* Right-side ul */
+.Right-Side ul {
+  width: 90%;
+  height: 95%;
+  overflow: auto;
+  /* background: red; */
+  margin: 3% auto;
+}
+
+.Right-Side ul h5 {
+  font-size: 1.05em;
+}
+
+.Right-Side ul li {
+  font-size: 0.98em;
+  margin-bottom: 0.15em;
+}
+.Right-Side ul li:hover{
+  background: rgb(240,240,240, 0.8);
+  cursor: pointer;
+}
+
+
+.Right-Side ul p{
+  font-size: 0.9em;
+  width: 95%;
+  text-align: justify;
+  margin: 0 2.5% 1% 2.5%;
+  /* background: red */
+}
+
+.Right-Side ul li button span:hover{
+  color: #f22e41
+}
