@@ -2,16 +2,19 @@
 
 
 import React from 'react'
+import moment from 'moment'
 import Fragment from '../../../UI/Fragments'
 
 const List = (props) => {
 
+  
    const fetchList = []
       for (let key in props.lists) {
         fetchList.push({
           ...props.lists[key], key
         })
       }
+      fetchList.reverse()
 
 
     let list = fetchList.map((newList, index) => {
@@ -30,6 +33,9 @@ const List = (props) => {
                       <h5 className="mt-0 mb-1 float-left">{newList.title}</h5>
                         <p className='text-sm-left float-left'>
                           {newList.desc}
+                        </p>
+                        <p className='text-sm-right float-left timer'>
+                          {moment(newList.createdTime).format('h:mm a')} 
                         </p>
                     </div>
                   </div>

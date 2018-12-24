@@ -9,11 +9,11 @@ class Input extends Component {
 
 
 
-
 switchHandler = () => {
   let list = {
     title: this.props.descTitle,
-    desc: this.props.descContent
+    desc: this.props.descContent,
+    createdTime: new Date()
   }
   axios.post('https://my-project-03-57762.firebaseio.com/lists.json', list)
     .then(response => {

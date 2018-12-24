@@ -1,0 +1,36 @@
+.Right-Side .Header {
+  height: 4%;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 3%
+}
+
+.Right-Side .Header span {
+  width: 50%;
+  height: 100%;
+  float: left;
+  color: rgb(50, 50, 50)
+}
+
+.Right-Side .Header span:nth-child(1) {
+  padding-left: 0 !;
+  font-size: 1.1em;
+  font-weight: 600;
+  text-align: left
+}
+
+.Right-Side .Header span:nth-child(1) i:nth-child(1) {
+  font-size: 0.95em;
+  font-weight: 500
+}
+
+.Right-Side .Header span:nth-child(1) i:nth-child(2) {
+  font-size: 0.85em;
+  font-weight: 500
+}
+
+.Right-Side .Header span:nth-child(2) {
+  font-size: 1.1em;
+  font-weight: 600;
+  text-align: right
+}

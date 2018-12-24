@@ -4,10 +4,103 @@
 /* No List Message */
 .Right-Side{
   background: rgb(200,225,225, 0.5)
+  
 }
 .Right-Side h1{
   margin-top: 25%;
   font-weight: 600;
   font-size: 3em;
   color: rgb(90,90,90)
+}
+
+
+
+/* Right-side ul */
+.Right-Side ul {
+  width: 90%;
+  height: 92%;
+  overflow: auto;
+  margin: 0 auto;
+}
+
+.Right-Side ul h5 {
+  font-size: 1.05em;
+}
+
+.Right-Side ul li {
+  font-size: 0.98em;
+  margin-bottom: 0.15em;
+}
+
+.Right-Side ul li:hover {
+  background: rgb(240, 240, 240, 0.8);
+  cursor: pointer;
+}
+
+
+.Right-Side ul p {
+  font-size: 0.9em;
+  width: 95%;
+  text-align: justify;
+  margin: 0 2.5% 1% 2.5%;
+  /* background: red */
+}
+
+.Right-Side ul li button span:hover {
+  color: #f22e41
+}
+
+.Right-Side ul li .timer {
+  width: 100%;
+  margin: 0;
+  font-size: 0.70em;  
+  float: right;
+  padding-right: 7%; 
+}
+
+
+
+
+
+
+
+
+
+/* ////////////////////////////////////////////////////// */
+
+.Right-Side .Header {
+  height: 4%;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 3%
+}
+
+.Right-Side .Header span {
+  width: 50%;
+  height: 100%;
+  float: left;
+  color: rgb(50, 50, 50)
+}
+
+.Right-Side .Header span:nth-child(1) {
+  padding-left: 0 !;
+  font-size: 1.1em;
+  font-weight: 600;
+  text-align: left
+}
+
+.Right-Side .Header span:nth-child(1) i:nth-child(1) {
+  font-size: 0.95em;
+  font-weight: 500
+}
+
+.Right-Side .Header span:nth-child(1) i:nth-child(2) {
+  font-size: 0.85em;
+  font-weight: 500
+}
+
+.Right-Side .Header span:nth-child(2) {
+  font-size: 1.1em;
+  font-weight: 600;
+  text-align: right
 }

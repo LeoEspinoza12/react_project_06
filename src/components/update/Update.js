@@ -10,7 +10,8 @@ class Update extends Component {
 
   state = {
     title: '',
-    desc: ''
+    desc: '',
+    createdTime: ''
   }
 
   changeHandler = (e) => {
@@ -19,7 +20,7 @@ class Update extends Component {
 
   update = (reference) => {
     
-    axios.put('https://my-project-03-57762.firebaseio.com/lists/' + reference + '.json',{title: this.state.title, desc: this.state.desc})
+    axios.put('https://my-project-03-57762.firebaseio.com/lists/' + reference + '.json',{title: this.state.title, desc: this.state.desc, createdTime: this.state.createdTime})
       .then(response => {
         this.props.formReverse()
         this.props.update(response.status)
@@ -33,7 +34,8 @@ class Update extends Component {
           .then(response => {
             this.setState({
               title: response.data.title,
-              desc: response.data.desc
+              desc: response.data.desc,
+              createdTime: response.data.createdTime
             })
       })
   }

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Fragment from '../../UI/Fragments';
-import ListItems from  './list/List';
+import ListItem from  './list/List';
 import Update from '../update/Update'
+import Header from './header/Header'
 
 import Spinner from '../../UI/Spinner/Spinner';
 
@@ -33,19 +34,29 @@ class List extends Component {
   
   render() {
     
+  
     let list = null
+
       if(this.props.loading){
-          list = <Spinner />
+          list = <Fragment>
+                    <Spinner />
+                </Fragment> 
       } else if (this.state.updateForm === true) {
-          list = <Update 
-                  formReverse={this.formReverse}
-                  update={this.props.update}
-                  itemFormUpdate={this.state.itemFormUpdate} />
+          list = <Fragment>
+                    <Header lists={this.props.lists}/>
+                    <Update 
+                      formReverse={this.formReverse}
+                      update={this.props.update}
+                      itemFormUpdate={this.state.itemFormUpdate} />
+                 </Fragment>
       } else if (this.props.lists){
-          list = <ListItems 
-            lists={this.props.lists}
-              formUpdate={this.formUpdate}
-                delete={this.delete}/>
+          list = <Fragment>
+                    <Header lists={this.props.lists}/>
+                    <ListItem
+                    lists={this.props.lists}
+                      formUpdate={this.formUpdate}
+                        delete={this.delete}/>
+                 </Fragment>
       } else if (!this.props.lists) {
           list = <h1 className="display-4">You don't have any list!</h1> 
       }
