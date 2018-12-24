@@ -37,7 +37,6 @@ let inputBtn = <div className='Button'>
                   className="btn-sm float-left btn-primary"
                   onClick={()=>this.props.click('inputSwitch')}>
                     Add New</button>
-                
               </div>
 
 let inputForm = <div className='Form'>

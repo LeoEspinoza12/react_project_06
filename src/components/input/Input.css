@@ -17,7 +17,6 @@
 }
 
 
-
 /* New Input Area */
 .Left-Side .Form {
   height: 45%;
@@ -54,12 +53,9 @@
 .Left-Side .Brand{
   bottom: 15%;
   width: 100%;
-  height: 3%;
   margin: 0;
-  display: inline-block;
   position: absolute;
   margin-left: -50%;
   color: rgb(90, 90, 90);
   font-weight: 600
-  
 }
