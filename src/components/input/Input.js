@@ -37,6 +37,7 @@ let inputBtn = <div className='Button'>
                   className="btn-sm float-left btn-primary"
                   onClick={()=>this.props.click('inputSwitch')}>
                     Add New</button>
+                
               </div>
 
 let inputForm = <div className='Form'>
@@ -72,6 +73,9 @@ let inputForm = <div className='Form'>
     return(
          <div className="col-sm-4 Left-Side">
           {this.props.switch ? inputForm : inputBtn}
+          <div className='Brand'>
+            <p className=''><i>&copy;</i> aimanski.com</p>
+          </div>
         </div>
     )
   }
