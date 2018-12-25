@@ -15,7 +15,9 @@ class Main extends Component {
       addDescContent: '',
       update: false,
       lists: null,
-      loading: false
+      loading: false,
+      msgAlert: false, 
+      msgHandler: false
     }
   }
 
@@ -34,13 +36,19 @@ class Main extends Component {
       this.setState({[e.target.name]: e.target.value})
   }
 
-  onUpdate = (data) => {
+  onUpdate = (data, msgAlert) => {
     this.setState({loading: true})
     if(data === 200){
       axios.get('https://my-project-03-57762.firebaseio.com/lists.json')
         .then(response => {
-          this.setState({lists: response.data, loading: false})
+          this.setState({
+            lists: response.data, 
+            loading: false,
+            msgAlert: msgAlert,
+            msgHandler: true,
+          })
         })
+      setTimeout(()=>{this.setState({msgHandler: false})},2100)
     }
   }
 
@@ -55,7 +63,9 @@ class Main extends Component {
               descTitle={this.state.addDescTitle}
               descContent={this.state.addDescContent}
               click={this.click}
-              update={this.onUpdate}/>
+              update={this.onUpdate}
+              messageAlert={this.state.msgAlert}
+              msgHandler={this.state.msgHandler}/>
             <Lists
               loading={this.state.loading}
               lists={this.state.lists}

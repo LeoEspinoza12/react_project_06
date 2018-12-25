@@ -1,4 +1,5 @@
 import React from 'react'
+import './Header.css'
 import moment from 'moment'
 
 const Header = (props) => {
@@ -9,7 +10,6 @@ const Header = (props) => {
         ...props.lists[key]
       })
     }
-
     
   return (
      <div className='container Header'>

@@ -1,13 +1,10 @@
-
-
-
 import React, {Component} from 'react'
 import axios from 'axios'
+import MsgAlert from './msgAlert/MsgAlert'
+import Fragment from '../../UI/Fragments'
 import './Input.css'
 
 class Input extends Component {
-
-
 
 switchHandler = () => {
   let list = {
@@ -19,25 +16,35 @@ switchHandler = () => {
     .then(response => {
       // console.log(response.status)
       this.props.click('inputSwitch')
-      this.props.update(response.status)
+      this.props.update(response.status, 'success')
     })
-}
+  }
 
 render(){
+  
+  let msgAlert = null;
+  if(this.props.messageAlert !== false){
+    msgAlert =<MsgAlert 
+                msg={this.props.messageAlert}
+                msgHandler={this.props.msgHandler}
+                />
+  }
 
-  let disabled = true
-    if(this.props.descTitle.length >= 1 && this.props.descContent.length >= 1){
-      // console.log('it was true')
-      disabled = false
-    } 
+let disabled = true
+  if(this.props.descTitle.length >= 1 && this.props.descContent.length >= 1){
+    disabled = false
+  } 
 
-let inputBtn = <div className='Button'>
-                <button 
-                  type="button" 
-                  className="btn-sm float-left btn-primary"
-                  onClick={()=>this.props.click('inputSwitch')}>
-                    Add New</button>
-              </div>
+let inputBtn = <Fragment>
+                  <div className='Button'>
+                    <button 
+                      type="button" 
+                      className="btn-sm float-left btn-primary"
+                      onClick={()=>this.props.click('inputSwitch')}>
+                      Add New</button>
+                  </div>
+                  {msgAlert}
+                </Fragment>
 
 let inputForm = <div className='Form'>
                   <div className="form-group">
@@ -68,7 +75,6 @@ let inputForm = <div className='Form'>
                       Add List</button>
                 </div>
           
-              
     return(
          <div className="col-sm-4 Left-Side">
           {this.props.switch ? inputForm : inputBtn}
@@ -78,7 +84,6 @@ let inputForm = <div className='Form'>
         </div>
     )
   }
-
 }
 
 

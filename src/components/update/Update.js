@@ -23,7 +23,7 @@ class Update extends Component {
     axios.put('https://my-project-03-57762.firebaseio.com/lists/' + reference + '.json',{title: this.state.title, desc: this.state.desc, createdTime: this.state.createdTime})
       .then(response => {
         this.props.formReverse()
-        this.props.update(response.status)
+        this.props.update(response.status, 'info')
         // console.log(response)
       })
   }

@@ -3,6 +3,7 @@
 
 import React from 'react'
 import moment from 'moment'
+import './List.css'
 import Fragment from '../../../UI/Fragments'
 
 const List = (props) => {
@@ -39,9 +40,9 @@ const List = (props) => {
                         </p>
                     </div>
                   </div>
-              </li>
-      )
-    })
+                </li>
+              )
+            })
 
     return (
     <Fragment>

@@ -1,0 +1,42 @@
+/* Right-side ul */
+.Right-Side ul {
+  width: 90%;
+  height: 92%;
+  overflow: auto;
+  margin: 0 auto;
+}
+
+.Right-Side ul h5 {
+  font-size: 1.05em;
+}
+
+.Right-Side ul li {
+  font-size: 0.98em;
+  margin-bottom: 0.15em;
+}
+
+.Right-Side ul li:hover {
+  background: rgb(240, 240, 240, 0.8);
+  cursor: pointer;
+}
+
+
+.Right-Side ul p {
+  font-size: 0.9em;
+  width: 95%;
+  text-align: justify;
+  margin: 0 2.5% 1% 2.5%;
+  /* background: red */
+}
+
+.Right-Side ul li button span:hover {
+  color: #f22e41
+}
+
+.Right-Side ul li .timer {
+  width: 100%;
+  margin: 0;
+  font-size: 0.70em;
+  float: right;
+  padding-right: 7%;
+}
