@@ -6,7 +6,7 @@ This is a React Project I created for anybody to use. <br>
 [Click here to visit](https://aimanski05.herokuapp.com)
 <br>
 
-The project basically looks like this. ![](images/listApp.png)
+The project basically looks like this. ![](img/listApp.png)
 
 
 This application helps you create some tasks and will be saved 
