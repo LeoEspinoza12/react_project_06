@@ -1,7 +1,14 @@
-This is a simple React Application that uses axios. 
+
+
+### `TodoList App with Title and Description`
+This is a React Project I created for anybody to use. <br>
+
+The project basically looks like this. <br>
+![](images/listApp.png)
+
+
 This application helps you create some tasks and will be saved 
 to a database in the Google Firebase. 
-
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
