@@ -3,7 +3,7 @@
 ### `TodoList App with Title and Description`
 This is a React Project I created for anybody to use. <br>
 
-The project basically looks like this. [Sample Image](img/listApp.png)
+The project basically looks like this. ![](img/listApp.png)
 
 
 This application helps you create some tasks and will be saved 
